@@ -1,0 +1,28 @@
+name: Continuous Integration
+on:
+  push:
+    branches:
+      - main
+      - pre-*
+
+jobs:
+  build:
+    name: version management
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          semantic_version: 24.1.3
+          extra_plugins: |
+            @semantic-release/commit-analyzer
+            @semantic-release/release-notes-generator
+            @semantic-release/changelog
+            @semantic-release/github
+            @semantic-release/exec
+            @semantic-release/git
+            conventional-changelog-conventionalcommits
+        env:
+          GH_TOKEN: ${{ secrets.CI_TOKEN }}
