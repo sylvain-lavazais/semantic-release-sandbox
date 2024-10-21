@@ -22,7 +22,7 @@
             "release": "patch"
           }
         ]
-      }
+      }ea
     ],
     [
       "@semantic-release/release-notes-generator",
