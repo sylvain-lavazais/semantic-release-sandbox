@@ -1,3 +1,14 @@
+## [1.1.0](https://github.com/sylvain-lavazais/semantic-release-sandbox/compare/1.0.1...1.1.0) (2024-10-21)
+
+### Features
+
+* **build:** add release management of GH ([3aef9e5](https://github.com/sylvain-lavazais/semantic-release-sandbox/commit/3aef9e58305c98d5eba4a4ea404e4a8c3fd326d5))
+
+### Bug Fixes
+
+* **build:** fix CI release ([67af1e6](https://github.com/sylvain-lavazais/semantic-release-sandbox/commit/67af1e6d667cafb98fca7bde16f51c18fbb57ad5))
+* **build:** fix CI release ([98cf356](https://github.com/sylvain-lavazais/semantic-release-sandbox/commit/98cf3567ed7e3fb0780f8c58bc3265d9a7f8504d))
+
 ## [1.0.1](https://github.com/sylvain-lavazais/semantic-release-sandbox/compare/1.0.0...1.0.1) (2024-10-21)
 
 ### Bug Fixes
