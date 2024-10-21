@@ -20,10 +20,8 @@ jobs:
           extra_plugins: |
             @semantic-release/commit-analyzer
             @semantic-release/release-notes-generator
-            @semantic-release/changelog
             @semantic-release/github
             @semantic-release/exec
-            @semantic-release/git
             conventional-changelog-conventionalcommits
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
