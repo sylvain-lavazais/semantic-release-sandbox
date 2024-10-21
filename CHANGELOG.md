@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/sylvain-lavazais/semantic-release-sandbox/compare/1.0.0...1.0.1) (2024-10-21)
+
+### Bug Fixes
+
+* **build:** fix sem-rel CI ([4dbf5da](https://github.com/sylvain-lavazais/semantic-release-sandbox/commit/4dbf5da473829aa6212e06d00e42aa5f1aa861a4))
+
 ## 1.0.0 (2024-10-21)
 
 ### Features
