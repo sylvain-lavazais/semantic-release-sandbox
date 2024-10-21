@@ -9,7 +9,12 @@ jobs:
   build:
     name: version management
     runs-on: ubuntu-latest
-    permissions: write-all
+    permissions:
+      contents: write
+      pull-requests: write
+      statuses: write
+      issues: write
+      checks: write
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4
@@ -20,6 +25,7 @@ jobs:
           extra_plugins: |
             @semantic-release/commit-analyzer
             @semantic-release/release-notes-generator
+            @semantic-release/changelog
             @semantic-release/github
             @semantic-release/exec
             conventional-changelog-conventionalcommits
