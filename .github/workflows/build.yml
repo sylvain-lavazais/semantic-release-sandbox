@@ -9,6 +9,13 @@ jobs:
   build:
     name: version management
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      pull-requests: write
+      statuses: write
+      issues: write
+      checks: write
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4
