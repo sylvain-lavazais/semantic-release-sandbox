@@ -25,3 +25,5 @@ jobs:
             @semantic-release/exec
             @semantic-release/git
             conventional-changelog-conventionalcommits
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
