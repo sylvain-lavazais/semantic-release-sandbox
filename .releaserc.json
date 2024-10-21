@@ -1,10 +1,6 @@
 {
   "branches": [
-    "main",
-    {
-      "name": "pre-*",
-      "prerelease": true
-    }
+    "main"
   ],
   "tagFormat": "${version}",
   "plugins": [
@@ -30,25 +26,52 @@
         "preset": "conventionalcommits",
         "presetConfig": {
           "types": [
-            {"type": "feat", "section": "Features"},
-            {"type": "fix", "section": "Bug Fixes"},
-            {"type": "chore", "section": "Miscellaneous"},
-            {"type": "refactor", "section": "Refactoring"},
-            {"type": "docs", "hidden": true},
-            {"type": "style", "hidden": true},
-            {"type": "perf", "hidden": true},
-            {"type": "test", "hidden": true},
-            {"type": "sweat", "hidden": true}
+            {
+              "type": "feat",
+              "section": "Features"
+            },
+            {
+              "type": "fix",
+              "section": "Bug Fixes"
+            },
+            {
+              "type": "chore",
+              "section": "Miscellaneous"
+            },
+            {
+              "type": "refactor",
+              "section": "Refactoring"
+            },
+            {
+              "type": "docs",
+              "hidden": true
+            },
+            {
+              "type": "style",
+              "hidden": true
+            },
+            {
+              "type": "perf",
+              "hidden": true
+            },
+            {
+              "type": "test",
+              "hidden": true
+            },
+            {
+              "type": "sweat",
+              "hidden": true
+            }
           ]
         },
         "parserOpts": {
-          "mergeCorrespondence": ["id"]
+          "mergeCorrespondence": [
+            "id"
+          ]
         },
-        "writerOpts": {
-        }
+        "writerOpts": {}
       }
     ],
-    "@semantic-release/changelog",
     "@semantic-release/github"
   ]
 }
