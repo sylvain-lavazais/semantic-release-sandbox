@@ -28,3 +28,7 @@ jobs:
             conventional-changelog-conventionalcommits
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: store output next version
+        id: next_version
+        run: |
+          echo `git describe --tags --abbrev=0`
