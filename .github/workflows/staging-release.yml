@@ -20,4 +20,5 @@ jobs:
         uses: actions/checkout@v4
       - name: echoing something
         run: |
-          echo "::notice::Releasing staging"
+          VERSION=$( git describe --tags --abbrev=0 )
+          echo "::notice::Releasing staging of ${VERSION}"
