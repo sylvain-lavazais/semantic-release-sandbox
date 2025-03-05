@@ -1,0 +1,23 @@
+name: Continuous Integration
+
+on:
+  release:
+    types: [ created ]
+
+jobs:
+  build:
+    name: version management
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      statuses: write
+      issues: write
+      checks: write
+    environment: production
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+      - name: echoing something
+        run: |
+          echo "::notice::Releasing production"
