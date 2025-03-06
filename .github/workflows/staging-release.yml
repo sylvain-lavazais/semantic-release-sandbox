@@ -23,6 +23,6 @@ jobs:
           VERSION=$( git describe --tags --abbrev=0 )
           echo "::notice::Releasing staging of ${VERSION}"
       - name: inputs list test
-        uses: ./.github/workflows/inputs.yml
+        uses: ./.github/workflows/__inputs.yml
         with:
           parameter-list: test1, test2, test3
