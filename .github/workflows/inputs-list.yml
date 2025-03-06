@@ -1,0 +1,23 @@
+name: Release Staging
+
+on:
+  workflow_call:
+    inputs:
+      parameter-list:
+        description: 'parameter list'
+        required: true
+
+jobs:
+  build:
+    name: inputs list
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      statuses: write
+      issues: write
+      checks: write
+    steps:
+      - name: echoing list
+        run: |
+          echo "::notice::testing list parameters of ${{ inputs.parameter-list }}"

@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: version management
+    name: release production
     runs-on: ubuntu-latest
     permissions:
       contents: write
