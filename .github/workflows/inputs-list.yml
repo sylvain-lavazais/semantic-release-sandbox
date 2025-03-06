@@ -20,7 +20,7 @@ jobs:
       checks: write
     steps:
       - name: Checkout sources
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: echoing list
         run: |
           echo "::notice::testing list parameters of ${{ inputs.parameter-list }}"
