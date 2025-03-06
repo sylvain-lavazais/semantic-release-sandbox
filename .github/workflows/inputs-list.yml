@@ -4,6 +4,7 @@ on:
   workflow_call:
     inputs:
       parameter-list:
+        type: string
         description: 'parameter list'
         required: true
 

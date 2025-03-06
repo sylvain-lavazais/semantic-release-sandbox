@@ -26,4 +26,4 @@ jobs:
         uses: ./.github/workflows/inputs-list.yml
         with:
           parameter-list: |-
-            test1, test2
+            test1, test2, test3
