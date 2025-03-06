@@ -23,4 +23,5 @@ jobs:
         uses: actions/checkout@v4
       - name: echoing list
         run: |
+          VERSION=$( git describe --tags --abbrev=0 )
           echo "::notice::testing list parameters of ${{ inputs.parameter-list }}"
